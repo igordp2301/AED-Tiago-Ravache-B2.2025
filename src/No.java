@@ -1,12 +1,12 @@
 public class No {
     private String conteudo;
-    private No filhoEsq;
-    private No filhoDir;
+    No direita;
+    No esquerda;
 
     public No(String conteudo) {
         this.conteudo = conteudo;
-        this.filhoEsq = null;
-        this.filhoDir = null;
+        this.esquerda = null;
+        this.direita = null;
     }
 
     public String getConteudo() {
@@ -17,19 +17,6 @@ public class No {
         this.conteudo = conteudo;
     }
 
-    public No getfilhoEsq() {
-        return filhoEsq;
-    }
 
-    public void setfilhoEsq(No filhoEsq) {
-        this.filhoEsq = filhoEsq;
-    }
-
-    public No getfilhoDir() {
-        return filhoDir;
-    }
-
-    public void setfilhoDir(No filhoDir) {
-        this.filhoDir = filhoDir;
-    }
+    
 }
